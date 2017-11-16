@@ -11,3 +11,10 @@ If you want to add your own search engine, add an element to "engines" array at 
 
 ## Icon links
 To add or remove an icon link, you must edit startPage.js manually for now. I'll make it more easy in the future.
+
+## Credits
+*Fonts:* Font Awesome, NovaMono.  
+
+*Plugins:* bootstrap, popper.js, jQuery
+
+*Background image:* taken from [SubtlePatterns](https://www.toptal.com/designers/subtlepatterns/3px-tile/), author of the image: _Gre3g_
