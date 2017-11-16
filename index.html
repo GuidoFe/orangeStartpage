@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/startPage.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="centered">
+        <div class="text-center disable-select" id="weekday"></div>
+        <div class="text-center disable-select" id="date"></div>
+        <div class="text-center disable-select" id="clock"></div>
+        <div class="row justify-content-center" id="search-bar">
+            <div class="input-group col-md-8">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" onclick="newSearch()"><i class="fa fa-search"></i></button>
+                </span>
+                <input type="text" class="form-control field-box" id="field" placeholder="Search...">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdown-btn">
+                        Google
+                    </button>
+                    <div class="dropdown-menu" id="engine-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center disable-select" id="links">
+            <div class="col-md-8 text-center"> 
+                <a href="https://github.com/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://www.wikipedia.org">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-wikipedia-w fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://mail.google.com"> 
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-envelope fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-youtube fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://www.freecodecamp.org/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-free-code-camp fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://codepen.io/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-codepen fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://www.reddit.com/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-reddit-alien fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://web.whatsapp.com/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-whatsapp fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="http://www.unife.it/ing/informazione">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-university fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://calendar.google.com/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-calendar fa-inverse"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <!-- JQuery, Popper and Bootstrap plugins-->
+    <script src="scripts/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/startPage.js"></script>
+</body>
+</html>
