@@ -8,9 +8,11 @@
 </head>
 <body>
     <div class="centered">
+        <!--Date section-->
         <div class="text-center disable-select" id="weekday"></div>
         <div class="text-center disable-select" id="date"></div>
         <div class="text-center disable-select" id="clock"></div>
+        <!-- Search bar -->
         <div class="row justify-content-center" id="search-bar">
             <div class="input-group col-md-8">
                 <span class="input-group-btn">
@@ -26,8 +28,18 @@
                 </div>
             </div>
         </div>
+        <!-- Link row -->
         <div class="row justify-content-center disable-select" id="links">
-            <div class="col-md-8 text-center"> 
+            <div class="col-md-8 text-center">
+            <!-- New link template:
+                Note: fa-stack enable the stack of multiple icons; fa-circle is the external circle, fa-stack-2x makes the icon bigger, fa-inverse inverts colors
+                <a href="LINK">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa FONT-AWESOME-ICON-NAME fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            -->
                 <a href="https://github.com/">
                     <span class="fa-stack fa-2x">
                         <i class="fa fa-circle fa-stack-2x"></i>
@@ -95,7 +107,7 @@
 
 
   <!-- JQuery, Popper and Bootstrap plugins-->
-    <script src="scripts/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="scripts/jquery-3.2.1.slim.min.js"></script>
     <script src="scripts/popper.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/startPage.js"></script>
