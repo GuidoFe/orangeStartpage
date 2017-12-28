@@ -5,7 +5,8 @@ engines=[
     {name:"Google Images", url:"https://www.google.com/search?&tbm=isch&q="},
     {name:"DuckDuckGo", url:"https://duckduckgo.com/?q="},
     {name:"Wikipedia", url:"https://en.wikipedia.org/w/index.php?search="},
-    {name:"GitHub", url:"https://github.com/search?utf8=✓&q="}
+    {name:"GitHub", url:"https://github.com/search?utf8=✓&q="},
+    {name:"ArchWiki", url:"https://wiki.archlinux.org/index.php?search="}
 ];
 //Update clock every 1/2 sec.
 function startTime() {
@@ -185,7 +186,8 @@ $(document).ready(function(){
     else
         changeEngine(defEngine);
     //Allows to use return to start a new search
-    document.getElementById("search-bar").addEventListener("keydown", function(e) {
+    document.getElementById('search-bar').addEventListener("keydown", function(e) {
         if (e.keyCode == 13) { newSearch(); }
     }, false);
+    document.getElementById('field').focus();
 });
