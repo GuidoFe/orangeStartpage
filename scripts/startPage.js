@@ -25,77 +25,6 @@ function startTime() {
     var t = setTimeout(startTime, 500);
 }
 
-// Return the week day name
-function weekDayToString(weekDay){
-    switch(weekDay){
-        case 1:
-            return "Monday";
-            break;
-        case 2:
-            return "Tuesday";
-            break;
-        case 3:
-            return "Wednesday";
-            break;
-        case 4:
-            return "Thursday";
-            break;
-        case 5:
-            return "Friday";
-            break;
-        case 6:
-            return "Saturday";
-            break;
-        case 0:
-            return "Sunday";
-            break;
-        default:
-            return "Error: weekDay number "+today.getDay();
-    }
-}
-//Return the month name
-function monthToString(month){
-    switch(month){
-        case 0: 
-            return "January";
-            break;
-        case 1: 
-            return "February";
-            break;
-        case 2: 
-            return "March";
-            break;
-        case 3: 
-            return "April";
-            break;
-        case 4: 
-            return "May";
-            break;
-        case 5: 
-            return "June";
-            break;
-        case 6: 
-            return "July";
-            break;
-        case 7: 
-            return "August";
-            break;
-        case 8: 
-            return "September";
-            break;
-        case 9: 
-            return "October";
-            break;
-        case 10: 
-            return "November";
-            break;
-        case 11: 
-            return "December";
-            break;
-        default:
-            return "Error in month conversion, number="+month;
-    }
-}
 //Return a properly formatted day number, like 1st, 3rd ...
 function dayToString(day){
     switch(day){
@@ -103,26 +32,29 @@ function dayToString(day){
         case 21:
         case 31:
             return day+"st";
-            break;
         case 2:
+        case 22:
             return day+"nd";
-            break;
         case 3:
+        case 23:
             return day+"rd";
-            break;
         default:
             return day+"th";
     }
 }
 //Update the date every time you load/reload the page or after midnight
 function writeDate() {
+    MonthsArray=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    WeekdaysArray=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     var today = new Date();
     var month = today.getMonth();
+    month < 12 ? monthString = MonthsArray[month] : monthString = "Error in month conversion, number="+month ;
     var weekDay = today.getDay();
+    weekDay < 7 ? WeekdayString = WeekdaysArray[weekDay] : WeekdayString = "Error: weekDay number "+today.getDay();
     var day = today.getDate();
     var year = today.getFullYear();
-    document.getElementById('weekday').innerHTML = weekDayToString(weekDay);
-    document.getElementById('date').innerHTML = monthToString(month)+" "+dayToString(day)+", "+year;
+    document.getElementById('weekday').innerHTML = WeekdayString;
+    document.getElementById('date').innerHTML = monthString + " " + dayToString(day) + ", "+year;
     var t = setTimeout(startTime, 500);
 }
 // add zero in front of numbers < 10
